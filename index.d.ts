@@ -17,7 +17,7 @@ declare class Config {
 
 declare class UserAgent {
     constructor(config?: Config);
-    get(userAgent: string): Result;
+    get(userAgent: string, simple?: boolean): Result;
     metric(): {[key: string]: {[key: string]: number}};
     close(): void;
 }

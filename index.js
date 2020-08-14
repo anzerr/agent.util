@@ -19,7 +19,7 @@ class UserAgent {
         }
     }
 
-    get(ua) {
+    get(ua, simple) {
         if (!is.string(ua)) {
             throw new Error('userAgent should be a string');
 		}
@@ -28,7 +28,7 @@ class UserAgent {
 		}
         const userAgent = ua.substr(0, 500);
         if (!this.cache) {
-            return match.get(userAgent);
+            return match.get(userAgent, simple);
         }
         const d = this.cache.get(userAgent);
         if (d) {
