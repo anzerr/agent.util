@@ -1,0 +1,35 @@
+{
+	"name": "agent.util",
+	"version": "1.0.0",
+	"keywords": [],
+	"homepage": "https://github.com/anzerr/agent.util#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/agent.util/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/agent.util.git"
+	},
+	"license": "MIT",
+	"author": "anzerr",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "node test"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"dependencies": {
+		"storage.ts": "git+https://git@github.com/anzerr/storage.ts.git",
+		"think.library": "git+https://github.com/anzerr/think.library.git",
+		"type.util": "git+https://github.com/anzerr/type.util.git"
+	},
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"description": ""
+}
