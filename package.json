@@ -1,6 +1,6 @@
 {
 	"name": "agent.util",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "Parse and fetch info found inside user-agent.",
 	"keywords": [
 		"html",
