@@ -9,9 +9,9 @@ class UserAgent {
 
     constructor(config = {timeout: 60000}) {
         this.config = config;
-        if (config.timeout) {
+        if (this.config.timeout) {
             this.cache = new Cache();
-            this.timeout = config.timeout;
+            this.timeout = this.config.timeout;
         }
         if (this.config.sortTick) {
             this.sortThink = new Think(() => rule.sort(), this.config.sortTick);

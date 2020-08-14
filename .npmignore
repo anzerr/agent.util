@@ -1,0 +1,10 @@
+node_modules
+node_modules/*
+.tag*
+.github
+LICENSE
+README.md
+test.js
+test
+./test/data.js
+./test/index.js
