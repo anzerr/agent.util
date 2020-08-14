@@ -27,7 +27,7 @@ class Result {
     }
 
     get os() {
-        return this.data.os.key
+        return this.data.os ? this.data.os.key : null;
     }
 
     version(key) {

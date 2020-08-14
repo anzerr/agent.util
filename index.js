@@ -3,7 +3,8 @@ const {match} = require('./src/match'),
     {Cache} = require('storage.ts'),
     Think = require('think.library'),
     is = require('type.util'),
-    {rule} = require('./src/rule');
+    {rule} = require('./src/rule'),
+    Result = require('./src/result');
 
 class UserAgent {
 
@@ -21,7 +22,10 @@ class UserAgent {
     get(ua) {
         if (!is.string(ua)) {
             throw new Error('userAgent should be a string');
-        }
+		}
+		if (!ua || ua.length < 5) {
+			return new Result({valid: {phone: false, tablet: false}});
+		}
         const userAgent = ua.substr(0, 500);
         if (!this.cache) {
             return match.get(userAgent);
