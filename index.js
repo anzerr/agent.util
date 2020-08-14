@@ -32,7 +32,7 @@ class UserAgent {
         }
         const result = match.get(userAgent);
         this.cache.set(userAgent, result, this.timeout);
-        return result
+        return result;
     }
 
     metric() {

@@ -15,6 +15,7 @@
 	"main": "index.js",
 	"types": "index.d.ts",
 	"scripts": {
+		"linter": "eslint index.js",
 		"test": "node test"
 	},
 	"eslintConfig": {
