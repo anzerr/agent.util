@@ -7,10 +7,10 @@ let count = 0;
 const u = new UserAgent();
 for (const i in data) {
     for (const x in data[i]) {
-        if (count < 5) {
+        if (count < 10) {
             console.log(u.get(data[i][x].user_agent).data, data[i][x]);
         } else {
-            u.get(data[i][x].user_agent)
+            break;
         }
         count++;
     }

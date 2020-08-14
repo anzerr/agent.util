@@ -1,5 +1,9 @@
 
 ### `Intro`
+![GitHub Actions status | linter](https://github.com/anzerr/agent.util/workflows/linter/badge.svg)
+![GitHub Actions status | publish](https://github.com/anzerr/agent.util/workflows/publish/badge.svg)
+![GitHub Actions status | test](https://github.com/anzerr/agent.util/workflows/test/badge.svg)
+
 Parse and fetch info found inside user-agent
 
 #### `Install`
