@@ -1,7 +1,15 @@
 {
 	"name": "agent.util",
 	"version": "1.0.9",
-	"keywords": [],
+	"description": "Parse and fetch info found inside user-agent.",
+	"keywords": [
+		"html",
+		"http",
+		"info",
+		"nodejs",
+		"user-agent",
+		"util"
+	],
 	"homepage": "https://github.com/anzerr/agent.util#readme",
 	"bugs": {
 		"url": "https://github.com/anzerr/agent.util/issues"
@@ -32,6 +40,5 @@
 	},
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"description": ""
+	}
 }
