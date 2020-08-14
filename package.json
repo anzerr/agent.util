@@ -15,7 +15,8 @@
 	"main": "index.js",
 	"types": "index.d.ts",
 	"scripts": {
-		"linter": "eslint index.js",
+		"linter": "eslint index.js ./src/*",
+		"flinter": "eslint --fix index.js ./src/*",
 		"test": "node test"
 	},
 	"eslintConfig": {

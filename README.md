@@ -9,12 +9,13 @@ Parse and fetch info found inside user-agent
 #### `Install`
 ``` bash
 npm install --save git+https://git@github.com/anzerr/agent.util.git
+npm install --save @anzerr/agent.util
 ```
 
 ### `Example`
 ``` javascript
 
-const {UserAgent} = require('../index');
+const {UserAgent} = require('@anzerr/agent.util');
 
 const u = new UserAgent();
 
